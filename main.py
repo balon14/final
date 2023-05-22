@@ -17,3 +17,9 @@ def load_image():
         return Image.open(io.BytesIO(image_data))
     else:
         return None
+    
+
+# Выводим заголовок страницы средствами Streamlit     
+st.title('Классификация изображений')
+# Вызываем функцию создания формы загрузки изображения
+img = load_image()
