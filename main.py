@@ -27,7 +27,7 @@ img = load_image()
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = EfficientNetB0(weights='imagenet')
+    model = EfficientNetB6(weights='imagenet')
     return model
 
 
