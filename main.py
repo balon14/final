@@ -40,7 +40,7 @@ def preprocess_image(img):
 
 
 def print_predictions(preds):
-    classes = decode_predictions(preds, top=3)[0]
+    classes = decode_predictions(preds, top=5)[0]
     for cl in classes:
         st.write(cl[1], cl[2])
         
